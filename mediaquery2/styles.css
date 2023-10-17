@@ -1,0 +1,129 @@
+.image-container {
+  position: absolute;
+  top: 100px; /* adjust as needed */
+  left: 50px; /* adjust as needed */
+}
+
+img {
+  width: 300px; /* adjust as needed */
+  height: auto; /* maintain aspect ratio */
+}
+
+* {
+  margin: 0 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: sans-serif;
+}
+
+#size {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-size: 35px;
+}
+
+.container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-size: 4vw;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5vw;
+  gap: 15px;
+}
+
+.main {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.main__image {
+  background-image: url("Portrait.png");
+  width: 50%;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.main__text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.main__text-1 {
+  font-size: 10vw;
+}
+.main__text-2, .main__text-3, .main__text-4 {
+  font-size: 5vw;
+}
+
+.footer {
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.footer [class^=footer__] img {
+  width: 5.3vw;
+}
+
+@media (max-width: 650px) {
+  .header {
+    justify-content: center;
+  }
+  .header__logo {
+    font-size: 40px;
+  }
+  .header__menu {
+    display: none;
+  }
+}
+.main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_image {
+  width: 200px;
+  height: 200px;
+}
+.main_text {
+  width: 100%;
+}
+.main_text-1 {
+  display: none;
+}
+.main_text-2, .main_text-3, .main_text-4 {
+  font-size: 30px;
+}
+
+.footer {
+  justify-content: center;
+  margin: 0;
+}
+.footer [class^=footer__] img {
+  width: 45px;
+  height: 45px;
+}/*# sourceMappingURL=styles.css.map */
